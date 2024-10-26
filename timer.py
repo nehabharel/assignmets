@@ -1,5 +1,5 @@
 import time
-
+from playsound import playsound
 def countdown_timer(seconds):
     while seconds>0:
         mins=int(seconds/60)
@@ -10,6 +10,7 @@ def countdown_timer(seconds):
         time.sleep(1)
         seconds -=1 #or seconds=seconds
     print("time up!")
+    playsound("")
 
 #input time in seconds
 seconds=input("Enter the time in seconds :  ")
